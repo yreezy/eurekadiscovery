@@ -1,9 +1,13 @@
 spring:
   application:
-    name: eureka_manage_page
+    name: eurekaManagePage
 server:
   port: 9090
 eureka:
+  instance:
+    appname: eureka management page
+  server:
+    eviction-interval-timer-in-ms: 30000
   client:
     register-with-eureka: false
     fetch-registry: false
